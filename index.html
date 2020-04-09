@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không</title>
+</head>
+<body>
+<p>Hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không</p>
+<button onclick="checkNumeric()">Nhập ký tự</button>
+<script type="text/javascript">
+	function checkNumeric() {
+		let enterNumber = prompt('Nhập vào một ký tự.');
+		if (isNaN(enterNumber)) {
+			alert('Ký tự vừa nhập vào không phải một số.');
+		}else{
+			alert('Bạn vừa nhập vào một số.');
+		}
+	}
+</script>
+</body>
+</html>
